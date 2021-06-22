@@ -1,0 +1,35 @@
+.header{
+    height: 3.5pc;
+    padding: 8px 4% 0% 0%;
+    display:flex;
+    // background: linear-gradient(259.61deg, #D61BFE 0%, #7175FF 100%, #78EFFF 100%);
+    background: linear-gradient(259.61deg, #D61BFE 0%, #7175FF 50.81%, #78EFFF 100.57%);
+    // background: linear-gradient(88.53deg, #D830FC 39.83%, #17D5FC 100%);
+    .imageContainer{
+        line-height: 2.4;
+        flex: 0.1;
+        cursor: pointer;
+        img{
+            // width: 95px;
+            height: 83%;
+        }
+    }
+    .blockContainer{
+        line-height: 2.9;
+        flex: 0.9;
+        text-align: end;
+        color: #ffffff;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .header{ 
+        height: 4pc;
+        padding: 2% 4% 0% 4%;
+        .imageContainer img {
+            width: 5pc;
+            height: 73%;
+        }
+    }
+}

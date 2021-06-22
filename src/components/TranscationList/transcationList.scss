@@ -1,0 +1,122 @@
+.transcationList{
+    .desktopIpadOnly{
+        display: inline-table;
+    }
+    .mobileOnly{
+        display: none;
+    }
+    margin: 1% 17.5%;
+    color: #ffffff;
+    h3{
+        margin: 6% 0% 2% 0%;
+        text-align: initial;
+        font-size: 20px;
+    }
+    .dataContainer{
+        display: flex;
+        flex-direction: row;
+        .label{
+            flex: 0.5;
+        }
+        .values{
+            flex: 0.5;
+        }
+    }
+    .table{
+        tr:first-child th:first-child,
+        tr:first-child td:first-child {
+            border-top-left-radius: 6px;
+        }
+        tr:first-child th:last-child,
+        tr:first-child td:last-child {
+            border-top-right-radius: 6px;
+        }
+        tr:last-child td:first-child {
+            border-bottom-left-radius: 6px;
+        }
+        tr:last-child td:last-child {
+            border-bottom-right-radius: 6px;
+        }
+        border-spacing: 0;
+        text-align: initial;
+        border-collapse: separate !important;
+        border-radius: 7px;
+        table-layout: fixed;
+        font-size: 13px;
+        thead{
+            background-color: #2F3248;
+            border: none;
+        }
+        tr>:nth-child(1), :nth-child(2){ 
+            /* your css here */
+            // max-width: 100px;
+            white-space: nowrap;
+            overflow-x: hidden;
+            text-overflow: ellipsis;
+            }
+        // td {
+           
+        // }
+        tbody tr:nth-of-type(even) {
+            background-color: #2F3248 !important
+        }
+        tbody tr:nth-of-type(odd) {
+            background-color: #454860 !important;
+        }
+    }
+
+    .etherScanLink {
+        color: #ffffff;
+        border-bottom: dotted 2px;
+        font-size: 12px;
+        text-decoration: none;
+        cursor: pointer;
+        /* margin: 0px; */
+    }
+}
+
+@media only screen 
+  and (min-width : 769px) 
+  and (max-width : 1024px) 
+{
+    .transcationList {
+        margin: 2% 17.5% !important;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .transcationList {
+        margin: 2% 10.5% !important;
+        .desktopIpadOnly{
+            display: none;
+        }
+        .mobileOnly{
+            display: block;
+        }
+        .card-header {
+            font-size: 13px;
+            background-color: #2F3248;
+            padding: 5px 9px;
+            text-align: initial;
+        }
+        .card-body {
+            background-color: #454860;
+            padding: 5px 8px;
+            text-align: initial;
+            font-size: 12px;
+            p {
+                margin: 6px 2px;
+            }
+        }
+    }
+    .table{
+        table-layout: auto !important;
+        tr>:nth-child(1), :nth-child(2){ 
+            /* your css here */
+            max-width: 100px;
+            white-space: nowrap;
+            overflow-x: hidden;
+            text-overflow: ellipsis;
+            }
+    }
+}

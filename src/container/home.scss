@@ -1,0 +1,273 @@
+
+
+.mainHome{
+    background-image: url("./home_bg.png");
+    background-size: cover;
+    .doggyImage{
+        position: absolute;
+        right: 0px;
+        img{
+            height: 208px;
+        }
+    }
+    .satelliteImage {
+        margin-right: 72%;
+        position: absolute;
+        top: 20%;
+        right: 0px;
+    }
+    .parachuteImage {
+        position: absolute;
+        margin-left: 30%;
+        top: 10%;
+    }
+    .parachuteImageBottom {
+        margin-bottom: 0%;
+        margin-left: 46%;
+        margin-top: -2%;
+    }
+    .homeData{
+        .ethereumImage {
+            padding: 2%;
+        }
+        .homeHeader{
+                background-image: linear-gradient(88.53deg, #D830FC 39.83%, #17D5FC 100%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin-top: 4%;
+                margin-bottom: 8%;
+                p{
+                    font-size: 38px;
+                    margin: 0;
+                    font-style: italic;
+                }
+                h4{
+                    font-size: 90px;
+                    font-weight: bold;
+                    font-style: italic;
+                }
+            }
+            .tilesContainer{
+                // padding: 0% 14%;
+                display: flex;
+                width: calc(100% - 72%);
+                display: flex;
+                margin: auto;
+                grid-gap: 6%;
+                gap: 6%;
+                img{
+                    margin-top: 16%;
+                }
+                p{
+                    margin: 0px;
+                    padding-top: 2%;
+                    color: #ffffff;
+                }
+            
+                .metaTileActive{
+                    border-top: 3px solid #D61BFE !important;
+                    border-bottom: 3px solid #78EFFF !important;
+                    background-image: 
+                        linear-gradient(#D61BFE, #78EFFF),
+                        linear-gradient(#D61BFE, #78EFFF)
+                    ;
+                    background-size: 3px 100%;
+                    background-position:0 0, 100% 0;
+                    background-repeat:no-repeat;
+                    background-color: #2f3248;
+    
+                }
+                .trustTileActive{
+                    background-color: #2f3248;
+                    border-left: 0px solid #D61BFE !important;
+                    border-right: 0px solid #D61BFE !important;
+                    border-bottom: 3px solid #78EFFF !important;
+                    border-top: 3px solid #78EFFF !important;
+                    background-image: 
+                    linear-gradient(259.61deg, #78EFFF 0%, #D61BFE 50.81%, #D61BFE 1010.57%),
+                    linear-gradient(259.61deg, #78EFFF 0%, #D61BFE 50.81%, #D61BFE 110.57%),
+                    linear-gradient(259.61deg, #78EFFF 0%, #D61BFE 50.81%, #D61BFE 110.57%),
+                    linear-gradient(259.61deg, #78EFFF 0%, #D61BFE 50.81%, #D61BFE 110.57%);
+                    ;
+                    background-size: 4px 120%;
+                    background-position:0 0, 100% 0;
+                    background-repeat:no-repeat;
+            
+               
+                }
+              
+                .tickMark1{
+                    margin-left: auto;
+                    background-image: url('./tick.png');
+                    height: 34px;
+                    background-size: cover;
+                    width: 34px;
+                }
+              
+                .metaTile{
+                    padding: 2%;
+                    border: solid 1px purple;
+                    border-radius: 10px;
+                    flex: 1;
+                    height: 17pc;
+                    margin: 2% 0%;
+                }
+                .trustTile{
+                    padding: 2%;
+                    border: solid 1px cyan;
+                    border-radius: 10px;
+                    flex: 1;
+                    height: 17pc;
+                    margin: 2% 0%;
+                }
+              
+            }
+
+            .walletMainContainer{
+                margin: 4px auto;
+                width: 28%;
+                .walletButton{
+                    position: relative;
+                    width: 100%;
+                    padding: 12px;
+                    border-radius: 7px;
+                    border: solid 1px blueviolet;
+                    letter-spacing: 3px;
+                    font-weight: 600;
+                    color: #ffffff;
+                    background: linear-gradient(88.53deg, #D830FC 39.83%, #17D5FC 100%);
+                    z-index: 99;
+                }
+            }
+
+            .priceMainContainer{
+                border: solid 1px #ffffff;
+                border-radius: 5px;
+                margin: 1% auto 1% auto;
+                color: #ffffff;
+                padding: 15px 10px;
+                width: 30%;
+            h5 {
+                text-align: initial;
+            }
+            .imageContainer{
+                display: flex;
+                .image1{
+                    flex: 1;
+                    display: flex;
+                }
+                .textBox{
+                    border: solid 1px #ffffff;
+                    border-radius: 5px;
+                    width: 75%;
+                    text-align: initial;
+                    margin-left: 4%;
+                    padding: 4px;
+                }
+                .image2{
+                    flex: 1;
+                    display: flex;
+                }
+                .equalTwo{
+                    font-size: 24px;
+                    margin-left: -2%;
+                    margin-right: 2%;
+                    line-height: 1;
+                }
+            }
+        }
+
+    }
+
+}
+
+
+@media only screen 
+and (min-width : 776px) 
+and (max-width : 1090px) 
+{
+    .tilesContainer{
+        width: 50% !important;
+    }
+    .walletMainContainer{
+        margin: 4px auto;
+        width: 50% !important;
+    }
+    .priceMainContainer{
+        width: 50% !important;
+    }
+    .doggyImage{
+      display: none;
+    }
+    .satelliteImage{
+        display: none;
+        img {
+            height: 136px;
+        }
+    }
+   
+}
+@media only screen and (max-width: 777px) {
+    .homeHeader {
+        margin-top: 10% !important;
+    }
+    .doggyImage{
+        display: none;
+    }
+    .satelliteImage {
+        display: none;
+    }
+    .mainHome .parachuteImage {
+        margin-left: 0%;
+       
+    }
+    .parachuteImageBottom{
+        img{
+            height: 120px !important;
+        }
+    }
+    .homeData{
+        .tilesContainer img {
+            margin-top: 6% !important;
+        }
+        .metaTile{
+            display: none;            
+        }
+        .trustTile{
+            height: 13pc !important;
+        }
+        h4 {
+            font-size: 49px !important;
+        }
+        .homeHeader{
+            p {
+                font-size: 31px !important;
+            }
+        }
+        .tilesContainer img {
+            height: 67px !important;
+        }
+    }
+    .tilesContainer{
+        width: 82% !important;
+    }
+    .walletMainContainer{
+        width: 82% !important;
+    }
+    .priceMainContainer{
+        width: 82% !important;
+        margin: 5% auto 4% auto !important;
+    }
+
+    .imageContainer{
+        display: flex;
+        flex-direction: column;
+        .image1{
+            margin-bottom: 2%;
+        }
+        .equalTwo{
+           display: none;
+        }
+    }
+}
+

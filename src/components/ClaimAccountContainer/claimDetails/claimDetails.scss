@@ -1,0 +1,61 @@
+.claimDetails{
+    text-align: initial;
+    margin: 0% 2% 0% 0%;
+    .claimTable{
+        border: solid 1px;
+        border-radius: 7px;
+    }
+    .eachRow{
+        display: flex;
+        padding: 8px 12px;
+        font-size: 14px;
+        border-bottom: solid 1px;
+        .label{
+            flex: 0.3;
+        }
+        .values{
+            flex: 0.7;
+            word-break: break-word;
+        }
+    }
+    .eachRow:nth-last-child(1) {
+        border-bottom: none;
+    }
+    
+    .allocations{
+        display: flex;
+        justify-content: space-between;
+        margin: 1% 0%;
+        color: mediumpurple;
+        .allocation1, .allocation2, .allocation3{
+            padding: 1px 9px;
+            width: 32%;
+            border: solid 1px mediumpurple;
+            border-radius: 7px;
+            p {
+                margin: 0;
+            }
+        }
+    }
+    .buttonsContainer{
+        display: flex;
+        .claimableBalance{
+            flex: 0.7;
+            margin: auto 2px;
+            padding: 9px 6px;
+            border: solid 1px mediumpurple;
+            border-top-left-radius: 7px;
+            border-bottom-left-radius: 7px;
+        }
+        .sendButton{
+            flex: 0.3;
+            border-top-right-radius: 7px;
+            border-bottom-right-radius: 7px;
+            border: solid 1px blueviolet;
+            letter-spacing: 3px;
+            font-weight: 600;
+            color: #ffffff;
+            background: linear-gradient(259.61deg, #D61BFE 0%, #7175FF 50.81%, #78EFFF 100.57%);
+        }
+    }
+}

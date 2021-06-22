@@ -1,0 +1,39 @@
+.footer{
+    background-image: url('./footer.png');
+    background-size: cover;
+    padding: 14px;
+    height: 7pc;
+    border-top: solid 1px grey;
+    display: flex;
+    color: grey;
+    .imageFooter{
+        flex: 0.2;
+        margin: auto;
+    }
+    .footerLinks{
+        text-align: end;
+        flex: 0.8;
+        font-size: 21px;
+        margin: auto 9%;
+        svg {
+            margin-right: 2%;
+        }
+    }
+}
+body > #root > div {
+    height: 100vh;
+    overflow-x: auto;
+  }
+
+
+  @media only screen and (max-width: 770px) {
+    .footer{
+        flex-direction: column;
+        img {
+            height: 90%;
+        }
+        .footerLinks{
+            text-align: center;
+        }
+    }
+}

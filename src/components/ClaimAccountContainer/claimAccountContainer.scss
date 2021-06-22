@@ -1,0 +1,33 @@
+.claimAccountContainer{
+    margin: 4% 9% 0% 9%;
+    color: #ffffff;
+    h3{
+        text-align: initial;
+        margin: 2% 10%;
+        font-size: 24px;
+    }
+    .subClaimAccountContainer{
+        display: flex;
+        margin: 0% 10%;
+        .claimDetails{
+            flex: 0.75;
+        }
+        .balanceDetails{
+            flex: 0.25;
+        }
+    }
+}
+
+@media only screen and (max-width: 845px) {
+    .claimAccountContainer{
+        margin-top: 18%;
+        .subClaimAccountContainer{
+            flex-direction: column;
+            margin: 0%;
+        }
+        .claimDetails{
+            margin: 0% 0% 3% 0%;
+        }
+        margin-bottom: 9%;
+    }
+}
