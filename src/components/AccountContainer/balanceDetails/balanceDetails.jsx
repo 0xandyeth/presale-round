@@ -24,9 +24,7 @@ export const BalanceDetails = ({myBalance}) =>{
                         <img src="./Foil.png"></img>
                     </div>
                     <div className="textBox">
-                        <div>50</div>
-                        <div>000</div>
-                        <div>5000 FOIL</div>
+                        <div>50,000 FOIL</div>
                     </div>
                 </div>
             </div>
